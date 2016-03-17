@@ -230,7 +230,7 @@ else:
 
 if args.format=='ros':
     if args.stereo:
-        writeYaml(args.output[1], m.cam1.toROS())
-        writeYaml(args.output[2], m.cam2.toROS())
+        writeYaml(args.output[0], m.cam1.toROS())
+        writeYaml(args.output[1], m.cam2.toROS())
     else:
-        writeYaml(args.output[1], m.toROS())
+        writeYaml(args.output[0], m.toROS())

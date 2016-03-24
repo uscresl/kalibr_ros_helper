@@ -202,6 +202,7 @@ parser.add_argument('--output',  type=str, nargs='+', help='an integer for the a
 parser.add_argument('--input-format', choices=formats, default='camchain')
 parser.add_argument('--format', choices=formats, default='ros')
 parser.add_argument('--cam', type=int, default=[0,], nargs='*')
+parser.add_argument('--camera-names', type=str, nargs='*')
 group = parser.add_mutually_exclusive_group(required=True)
 group.add_argument('--mono',dest='stereo',action='store_false')
 group.add_argument('--stereo',dest='stereo',action='store_true')
